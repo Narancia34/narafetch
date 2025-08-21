@@ -6,7 +6,7 @@ A custom system information display script inspired by fastfetch, with cute ASCI
 
 - 🎨 Multiple ASCII art options (penguin, cat, computer)
 - 🌈 Colorful output with system information
-- 📊 Displays OS, kernel, uptime, packages, shell, CPU, and memory info
+- 📊 Displays OS, kernel, uptime, shell, CPU, and memory info
 - 🚀 Fast and lightweight
 - 🔧 Cross-platform compatible (Linux/Unix systems)
 
@@ -78,7 +78,6 @@ rm ~/.local/bin/narafetch
 - **OS**: Operating system name and version
 - **Kernel**: Linux kernel version
 - **Uptime**: How long the system has been running
-- **Packages**: Number of installed packages (supports dpkg, rpm, pacman, brew)
 - **Shell**: Current shell
 - **Terminal**: Terminal emulator
 - **CPU**: Processor model
@@ -86,7 +85,14 @@ rm ~/.local/bin/narafetch
 
 ## ASCII Art Options
 
-### Penguin (Default)
+
+### Cat (Default)
+```
+     /\_/\  
+    ( o.o ) 
+     > ^ <
+```
+### Penguin
 ```
        .--.
       |o_o |
@@ -95,13 +101,6 @@ rm ~/.local/bin/narafetch
     (|     | )
    /'\_   _/`\
    \___)=(___/
-```
-
-### Cat
-```
-     /\_/\  
-    ( o.o ) 
-     > ^ <
 ```
 
 ### Computer
