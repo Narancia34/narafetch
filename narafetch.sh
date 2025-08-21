@@ -143,6 +143,42 @@ EOF
     echo -e "${NC}"
 }
 
+print_ascii_toro() {
+    echo -e "${GREEN}"
+    cat << "EOF"
+            ,.  ,.
+            ||  ||
+           ,''--''.
+          : (.)(.) :
+         ,'        `.
+         :          :
+         :          :
+         `._m____m_,' 
+    
+EOF
+    echo -e "${NC}"
+}
+
+print_ascii_kuroneko() {
+    echo -e "${GREEN}"
+    cat << "EOF"
+           :\     /;               _
+          ;  \___/  ;             ; ;
+         ,:-"'   `"-:.            / ;
+    _   /,---.   ,---.\   _     _; /
+    _:>((  |  ) (  |  ))<:_ ,-""_,"
+        \`````   `````/""""",-""
+         '-.._ v _..-'      )
+           / ___   ____,..  \
+          / /   | |   | ( \. \
+         / /    | |    | |  \ \
+         `"     `"     `"    `" 
+    
+EOF
+    echo -e "${NC}"
+}
+
+
 
 main() {
     clear
@@ -175,6 +211,8 @@ case "${1:-}" in
         echo "  --computer     Use computer ASCII art"
         echo "  --rocket       Use rocket ASCII art"
         echo "  --coffee       Use coffee ASCII art"
+        echo "  --toro         Use toro ASCII art"
+        echo "  --kuroneko, -k Use kuroneko ASCII art"
         exit 0
         ;;
     --cat)
@@ -191,6 +229,12 @@ case "${1:-}" in
         ;;
     --coffee)
         print_ascii() { print_ascii_coffee; }
+        ;;
+    --toro)
+        print_ascii() { print_ascii_toro; }
+        ;;
+    --kuroneko|-k)
+        print_ascii() { print_ascii_kuroneko;}
         ;;
 esac
 
