@@ -13,11 +13,11 @@ A custom system information display script inspired by fastfetch, with cute ASCI
 ## Usage
 
 ```bash
-# Default penguin ASCII art
+# Default ASCII art
 ./narafetch.sh
 
-# Cat ASCII art
-./narafetch.sh --cat
+# Penguin ASCII art
+./narafetch.sh --penguin
 
 # Computer ASCII art
 ./narafetch.sh --computer
@@ -103,15 +103,22 @@ rm ~/.local/bin/narafetch
    \___)=(___/
 ```
 
-### Computer
+## kuroneko
 ```
-   .-----------. 
-  /  .-.   .-.  \
- /   | |   | |   \
- \   `-'   `-'   /
-  `-----[_]-----'
-```
+Kuroneko!
 
+       :\     /;               _
+      ;  \___/  ;             ; ;
+     ,:-"'   `"-:.            / ;
+_   /,---.   ,---.\   _     _; /
+_:>((  |  ) (  |  ))<:_ ,-""_,"
+    \`````   `````/""""",-""
+     '-.._ v _..-'      )
+       / ___   ____,..  \
+      / /   | |   | ( \. \
+     / /    | |    | |  \ \
+     `"     `"     `"    `"  
+```
 ## Customization
 
 You can easily customize the script by:
